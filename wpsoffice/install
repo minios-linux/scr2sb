@@ -4,6 +4,6 @@ apt update
 apt -y install xdg-utils
 
 FILE="wps-office_11.1.0.11704.XA_amd64.deb"
-wget -O $file https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11704/$FILE
+wget -O $FILE https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11704/$FILE
 apt -y install ./$FILE bsdmainutils ttf-mscorefonts-installer
 rm -f ./$FILE
