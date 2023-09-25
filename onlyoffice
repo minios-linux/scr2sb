@@ -1,0 +1,10 @@
+#!/bin/bash
+
+apt update
+
+curl -fsSL https://download.onlyoffice.com/GPG-KEY-ONLYOFFICE | gpg --dearmor >/etc/apt/trusted.gpg.d/onlyoffice.gpg
+echo 'deb https://download.onlyoffice.com/repo/debian squeeze main' >/etc/apt/sources.list.d/onlyoffice.list
+
+# install packages
+apt update
+apt -y install onlyoffice-desktopeditors
